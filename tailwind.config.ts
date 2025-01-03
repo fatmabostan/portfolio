@@ -21,14 +21,7 @@ const config: Config = {
       },
     },
     extend: {
-        backgroundImage: {
-          'sky-gradient': `linear-gradient(to bottom, 
-            #B2DEEC 2%,
-            #FADCAA 40%, 
-            #C56183 60%,
-            #432E54 90%
-          )`
-        },
+    
       fontFamily: {
         sans: "var(--font-sans)",
         serif: "var(--font-serif)", 

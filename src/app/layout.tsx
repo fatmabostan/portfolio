@@ -7,8 +7,9 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const calistoga = Calistoga({ subsets: ["latin"], variable: "--font-serif", weight: "400" });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Fatma Bostan",
   description: "Created with ❤️ in Ankara",
+  
 };
 
 export default function RootLayout({
@@ -25,7 +26,7 @@ export default function RootLayout({
         className={twMerge(
           inter.variable,
           calistoga.variable,
-          "bg-[#432E54] text-white antialiased font-sans"
+          "bg-[#35374B] text-white antialiased font-sans"
         )}
       >
         {children}
