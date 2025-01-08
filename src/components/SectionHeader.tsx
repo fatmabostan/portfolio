@@ -10,7 +10,7 @@ const SectionHeader = ({
   return (
     <div>
       <div className="flex justify-center">
-        <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-[#62AEDD] to-[#C56183] text-transparent bg-clip-text text-center">
+        <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-[#D6446F] to-[#44d6ab] text-transparent bg-clip-text text-center">
           {title}
         </p>
       </div>
