@@ -10,7 +10,7 @@ const Card = ({
     <div>
       <div
         className={twMerge(
-          "bg-[#2B2D2F] border border-[#d6446f]/80 rounded-3xl relative z-0 overflow-hidden after:z-10 after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/70 after:opacity-0 hover:after:opacity-100 hover:after:outline-white/20 after:pointer-events-none",
+          "bg-[#2B2D2F] rounded-3xl relative z-0 overflow-hidden after:z-10 after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/70 after:opacity-0 hover:after:opacity-100 hover:after:outline-white/20 after:pointer-events-none",
           className
         )}
       >
