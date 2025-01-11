@@ -10,10 +10,10 @@ export const metadata: Metadata = {
   
 };
 interface LangParams {
-  lang: string;
+  dict: string;
 }
 export async function generateStaticParams() {
-  return [{ lang: "en" }, { lang: "tr"}];
+  return [{ dict: "en" }, { dict: "tr"}];
 }
 export default function RootLayout({
   children,
@@ -23,7 +23,7 @@ export default function RootLayout({
   params: LangParams;
 }>) {
   return (
-    <html lang={params.lang}>
+    <html lang={params.dict} className="scroll-smooth">
       <head>
         <link rel="icon" href="/favicon.png" />
       </head>
