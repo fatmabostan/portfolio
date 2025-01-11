@@ -1,3 +1,4 @@
+'use client';
 import HeaderSection from "@/components/SectionHeader";
 import Card from "@/components/Card";
 import Image from "next/image";
@@ -7,6 +8,8 @@ import mapImage from "@/assets/images/map.png";
 import smileMemoji from "@/assets/images/memoji-smile.png";
 import CardHeader from "@/components/CardHeader";
 import ToolBoxItems from "@/components/ToolBoxItems";
+import { motion } from "framer-motion";
+import React from "react";
 
 const toolBoxItems = [
   {
@@ -96,8 +99,9 @@ const hobbies = [
   },
 ];
 export const AboutSection = () => {
+  const constratinRef = React.useRef<HTMLDivElement>(null);
   return (
-    <div className="py-20 lg:py-28">
+    <div id="about" className="py-20 lg:py-28">
       <div className="container">
         <HeaderSection
           title="About Me"
@@ -124,11 +128,11 @@ export const AboutSection = () => {
                 description="ipsum dolor sit amet consectetur adipisicing elit."
                 className=""
               />
-              <ToolBoxItems toolBoxItems={toolBoxItems} className="" />
+              <ToolBoxItems toolBoxItems={toolBoxItems} itemsWrapperClassName="animate-move-left [animation-duration:40s]" />
               <ToolBoxItems
                 toolBoxItems={toolBoxItems}
                 className="mt-6"
-                itemsWrapperClassName="-translate-x-1/2"
+                itemsWrapperClassName="animate-move-right [animation-duration:20s]"
               />
             </Card>
             </div>
@@ -141,18 +145,20 @@ export const AboutSection = () => {
                 description="ipsum dolor sit amet consectetur adipisicing elit."
                 className="px-6 py-6"
               />
-              <div className="relative flex-1">
+              <div className="relative flex-1" ref={constratinRef}>
                 {hobbies.map((item, index) => (
-                  <div
+                  <motion.div
                     key={index}
                     className="inline-flex gap-2 items-center px-6 bg-gradient-to-r from-[#d6446f] to-[#44d6ab] rounded-full py-1.5 absolute"
                     style={{ left: item.left, top: item.top }}
+                    drag
+                    dragConstraints={constratinRef}
                   >
                     <span className="font-medium text-gray-950">
                       {item.title}
                     </span>
                     <span>{item.emoji}</span>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </Card>
@@ -164,7 +170,9 @@ export const AboutSection = () => {
                 alt="map"
                 className="h-full w-full object-cover object-left-top"
               />
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full bg-gradient-to-r from-[#d6446f] to-[#44d6ab] after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#d6446f] to-[#44d6ab] -z-20 animate-ping [animation-duration:3s]"></div>
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#d6446f] to-[#44d6ab] -z-10"></div>
                 <Image
                   src={smileMemoji}
                   alt="my memoji is smiling"
