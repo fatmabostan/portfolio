@@ -4,8 +4,123 @@
         "about": "About",
         "projects": "Projects",
         "contact": "Contact",
-        "dict": "tr",
-        "flag": "🇹🇷"
+        "dict": "tr"
+    },
+    "hero": {
+        "memojiComputerAlt": "A girl peeking from behind her laptop",
+        "availability": "Open to new opportunities",
+        "heroTitle": "Ideas into Web and Mobile Solutions",
+        "heroDescription": "I transform your ideas into functional, high-performing web and mobile applications.",
+        "exploreButton": "Explore My Work",
+        "contactButton": "Connect with Me"
+    },
+    "projects": {
+        "headerTitle": "Projects",
+        "headerSubtitle": "Some of the work I've done",
+        "headerDesc": "Here are a few projects that showcase my skills and passion for development.",
+        "portfolioProjects": [
+            {
+                "title": "InternHub",
+                "desc": "InternHub is an innovative platform designed to streamline the internship application process.",
+                "features": [
+                    { "feature": "Secure user authentication with login functionality." },
+                    { "feature": "Automatic login functionality for returning users." },
+                    { "feature": "Integration with the JSearch API for diversified internship listings." },
+                    { "feature": "Advanced search filters to help users find suitable opportunities." },
+                    { "feature": "Bookmarking system to save preferred internship listings." }
+                ],
+                "link": "https://github.com/fatmabostan/InternHub"
+            },
+            {
+                "title": "To Do App",
+                "desc": "The To Do App is a productivity tool designed to help users efficiently manage their tasks.",
+                "features": [
+                    { "feature": "Skeleton loading screens during data fetching for a better user experience." },
+                    { "feature": "Secure user authentication for personalized access." },
+                    { "feature": "Automatic user login to streamline access and save time." },
+                    { "feature": "Dedicated pages for managing completed and pending tasks." }
+                ],
+                "link": "https://github.com/fatmabostan/todo-App"
+            },
+            {
+                "title": "PetPedia",
+                "desc": "A platform for adopting, rehoming, and learning about animals.",
+                "features": [
+                    { "feature": "Ongoing development with plans for advanced search filters and adoption management." }
+                ],
+                "link": "https://github.com/fatmabostan/meowpedia"
+            }
+        ]
+    },
+    "about": {
+        "headerTitle": "About Me",
+        "headerSubtitle": "A little introduction",
+        "headerDesc": "I'm passionate about creating meaningful digital experiences that combine functionality and aesthetics.",
+        "cardTitle": "My Toolbox",
+        "cardDesc": "A collection of technologies and tools I use to bring ideas to life.",
+        "cardTitle2": "My Hobbies",
+        "cardDesc2": "When I'm not coding, you can find me enjoying these activities.",
+        "smileMemojiAlt": "Smiling Memoji",
+        "mapImageAlt": "Location",
+        "hobbies": [
+            { "title": "Reading", "emoji": "📚", "left": "45%", "top": "70%" },
+            { "title": "Gaming", "emoji": "🎮", "left": "30%", "top": "40%" },
+            { "title": "Photography", "emoji": "📸", "left": "60%", "top": "50%" },
+            { "title": "Traveling", "emoji": "✈️", "left": "50%", "top": "30%" },
+            { "title": "Music", "emoji": "🎵", "left": "40%", "top": "60%" }
+        ]
+    },
+    "tape": {
+        "words": [
+            "JavaScript",
+            "React",
+            "React Native",
+            "Tailwind",
+            "SQL",
+            "Node.js",
+            "Next.js",
+            "TypeScript",
+            "MongoDB",
+            "Responsive",
+            "Python",
+            "Bootstrap",
+            "Cross-platform",
+            "C#",
+            "Modular",
+            "Dynamic",
+            "Fast-loading"
+        ]
+    },
+    "experiences": {
+        "headerTitle": "My Experience",
+        "headerSubtitle": "What I've done so far",
+        "headerDesc": "Here is an overview of my professional experience.",
+        "experience": [
+            {
+                "company": "TechCorp",
+                "year": "2023",
+                "position": "Frontend Developer",
+                "results": [
+                    { "title": "Developed a responsive web application to enhance user engagement." },
+                    { "title": "Integrated APIs for seamless data exchange and functionality." },
+                    { "title": "Collaborated with a team using Agile methodology to meet project goals." }
+                ]
+            },
+            {
+                "company": "Innovate Labs",
+                "year": "2022",
+                "position": "Junior Developer",
+                "results": [
+                    { "title": "Assisted in building dynamic web components using React." },
+                    { "title": "Performed code reviews to ensure quality and adherence to standards." },
+                    { "title": "Participated in daily stand-up meetings and sprint planning sessions." }
+                ]
+            }
+        ]
+    },
+    "contact": {
+        "contactTitle": "Get in Touch",
+        "contactText": "Feel free to reach out if you want to collaborate on a project or just say hi!",
+        "contactButton": "Connect with Me"
     }
- 
 }

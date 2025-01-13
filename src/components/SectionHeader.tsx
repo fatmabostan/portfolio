@@ -1,11 +1,11 @@
 const SectionHeader = ({
   title,
   subtitle,
-  text,
+  desc,
 }: {
   title: string;
   subtitle: string;
-  text: string;
+  desc: string;
 }) => {
   return (
     <div>
@@ -18,7 +18,7 @@ const SectionHeader = ({
         {subtitle}
       </h2>
       <p className="text-center md:text-lg lg:text-xl text-white/80 mt-4 max-w-md mx-auto">
-        {text}
+        {desc}
       </p>
     </div>
   );

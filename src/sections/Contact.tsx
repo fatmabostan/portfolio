@@ -1,6 +1,12 @@
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
-export const ContactSection = () => {
+export const ContactSection = ({t}: {
+  t:{
+    contactTitle:string;
+    contactText:string;
+    contactButton:string;
+  }
+}) => {
   return (
     <div id="contact" className="py-16 pt-12 lg:py-24 lg:pt-20">
       <div className="container">
@@ -14,19 +20,16 @@ export const ContactSection = () => {
           <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center">
             <div className="flex flex-col">
               <h2 className="font-serif text-2xl md:text-3xl">
-                Let's create somthing amazing together
+                 {t.contactTitle}
               </h2>
               <p className="text-sm md:text-base mt-2">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi,
-                officiis a itaque harum tempore consequuntur impedit rem
-                reiciendis sit vero ad, nihil error voluptatem nulla temporibus
-                animi quae veritatis rerum. Aut maxime, voluptas ipsam suscipit.
+                {t.contactText}
               </p>
             </div>
             <div className="w-full md:w-max">
               <a href="mailto:fatma_bostan_@outlook.com">
             <button className="text-white bg-gray-900 inline-flex items-center justify-center px-6 h-12 rounded-xl gap-2 mt-8 border border-gray-900 w-full md:w-max" >
-              <span className="font-semibold">Contact Me</span>
+              <span className="font-semibold">{t.contactButton}</span>
               <ArrowUpRightIcon className="size-4" />
             </button>
             </a>

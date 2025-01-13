@@ -30,7 +30,7 @@ export const Footer = () => {
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2"
+                className="inline-flex items-center gap-2 text-white/60"
               >
                 <span>{item.title}</span>
                 <ArrowUpRightIcon className="size-4" />

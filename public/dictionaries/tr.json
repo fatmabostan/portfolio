@@ -4,7 +4,123 @@
         "about": "Hakkımda",
         "projects": "Projeler",
         "contact": "İletişim",
-        "dict": "en",
-        "flag": "🇺🇸"
+        "dict": "en"
+    },
+    "hero": {
+        "memojiComputerAlt": "Bilgisayarının arkasından bakan bir kız",
+        "availability": "Yeni fırsatlara açık",
+        "heroTitle": "Fikirleri Web ve Mobil Çözümlere Dönüştürüyorum",
+        "heroDescription": "Fikirlerinizi işlevsel, yüksek performanslı web ve mobil uygulamalara dönüştürüyorum.",
+        "exploreButton": "Çalışmalarımı Keşfet",
+        "contactButton": "Benimle İletişime Geç"
+    },
+    "projects": {
+        "headerTitle": "Projeler",
+        "headerSubtitle": "Üzerinde çalıştığım projeler",
+        "headerDesc": "İşte yeteneklerimi ve geliştirme tutkumuzu yansıtan birkaç proje.",
+        "portfolioProjects": [
+            {
+                "title": "InternHub",
+                "desc": "InternHub, staj başvuru sürecini kolaylaştırmak için tasarlanmış yenilikçi bir platformdur.",
+                "features": [
+                    { "feature": "Güvenli kullanıcı giriş sistemi." },
+                    { "feature": "Otomatik giriş özelliği ile kullanıcı deneyimi artırıldı." },
+                    { "feature": "JSearch API entegrasyonu ile çeşitli staj ilanları sunuluyor." },
+                    { "feature": "Kapsamlı arama filtreleri ile uygun fırsatları hızlıca bulma imkanı." },
+                    { "feature": "Favori staj ilanlarını kaydetme özelliği." }
+                ],
+                "link": "https://github.com/fatmabostan/InternHub"
+            },
+            {
+                "title": "To Do App",
+                "desc": "To Do App, kullanıcıların görevlerini etkili bir şekilde yönetmelerine yardımcı olan bir verimlilik aracıdır.",
+                "features": [
+                    { "feature": "Veri yüklenirken skeleton ekranlarla kullanıcı deneyimi iyileştirildi." },
+                    { "feature": "Kişiselleştirilmiş erişim için güvenli kullanıcı kimlik doğrulama." },
+                    { "feature": "Tekrar giriş yapmaya gerek bırakmayan otomatik kullanıcı oturumu." },
+                    { "feature": "Tamamlanan ve bekleyen görevler için özel sayfalar." }
+                ],
+                "link": "https://github.com/fatmabostan/todo-App"
+            },
+            {
+                "title": "PetPedia",
+                "desc": "Hayvan sahiplenme, yeniden yuvalandırma ve hayvanlar hakkında bilgi edinme platformu.",
+                "features": [
+                    { "feature": "Geliştirilme aşamasında; gelişmiş arama ve sahiplenme yönetimi özellikleri planlanıyor." }
+                ],
+                "link": "https://github.com/fatmabostan/meowpedia"
+            }
+        ]
+    },
+    "about": {
+        "headerTitle": "Hakkımda",
+        "headerSubtitle": "Kısaca tanıyalım",
+        "headerDesc": "İşlevsellik ve estetiği bir araya getiren anlamlı dijital deneyimler oluşturmayı seviyorum.",
+        "cardTitle": "Araç Kutum",
+        "cardDesc": "Fikirleri gerçeğe dönüştürmek için kullandığım teknolojiler ve araçlar.",
+        "cardTitle2": "Hobilerim",
+        "cardDesc2": "Kod yazmadığım zamanlarda keyifle yaptığım aktiviteler.",
+        "smileMemojiAlt": "Gülen Memoji",
+        "mapImageAlt": "Konum",
+        "hobbies": [
+            { "title": "Kitap Okuma", "emoji": "📚", "left": "45%", "top": "70%" },
+            { "title": "Oyun Oynama", "emoji": "🎮", "left": "30%", "top": "40%" },
+            { "title": "Fotoğrafçılık", "emoji": "📸", "left": "60%", "top": "50%" },
+            { "title": "Seyahat Etme", "emoji": "✈️", "left": "50%", "top": "30%" },
+            { "title": "Müzik Dinleme", "emoji": "🎵", "left": "40%", "top": "60%" }
+        ]
+    },
+    "tape": {
+        "words": [
+            "JavaScript",
+            "React",
+            "React Native",
+            "Tailwind",
+            "SQL",
+            "Node.js",
+            "Next.js",
+            "TypeScript",
+            "MongoDB",
+            "Responsive",
+            "Python",
+            "Bootstrap",
+            "Cross-platform",
+            "C#",
+            "Modüler",
+            "Dinamik",
+            "Hızlı Yükleme"
+        ]
+    },
+    "experiences": {
+        "headerTitle": "Deneyimlerim",
+        "headerSubtitle": "Şimdiye kadar yaptıklarım",
+        "headerDesc": "İşte profesyonel deneyimlerime kısa bir bakış.",
+        "experience": [
+            {
+                "company": "TechCorp",
+                "year": "2023",
+                "position": "Frontend Developer",
+                "results": [
+                    { "title": "Kullanıcı etkileşimini artıran duyarlı bir web uygulaması geliştirdim." },
+                    { "title": "Dinamik veri alışverişi için API entegrasyonları yaptım." },
+                    { "title": "Proje hedeflerine ulaşmak için Agile metodolojisiyle ekip çalışmasına katkı sağladım." }
+                ]
+            },
+            {
+                "company": "Innovate Labs",
+                "year": "2022",
+                "position": "Junior Developer",
+                "results": [
+                    { "title": "React kullanarak dinamik web bileşenleri geliştirdim." },
+                    { "title": "Kod incelemeleri yaparak kaliteyi ve standartlara uygunluğu sağladım." },
+                    { "title": "Günlük toplantılara ve sprint planlamalarına katıldım." }
+                ]
+            }
+        ]
+    },
+    "contact": {
+        "contactTitle": "İletişime Geçin",
+        "contactText": "Bir projede iş birliği yapmak veya sadece merhaba demek isterseniz, bana ulaşmaktan çekinmeyin!",
+        "contactButton": "Benimle İletişime Geç"
     }
 }

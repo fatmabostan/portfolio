@@ -5,7 +5,7 @@ import grainImage from "@/assets/images/grain.jpg";
 import StarIcon from "@/assets/icons/star.svg";
 import HeroOrbit from "@/components/HeroOrbit";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
-export const HeroSection = () => {
+export const HeroSection = ({t}: {t: {[key: string]: string}}) => {
   return (
     <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
@@ -73,30 +73,30 @@ export const HeroSection = () => {
           <Image
             src={memojiComputer}
             className="size-[100px]"
-            alt="my memoji peeking from behind laptop"
+            alt={t.memojiComputerAlt}
           />
           <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
-            <div className="bg-green-500 rounded-full size-2.5 relative"><div className="absolute inset-0 rounded-full bg-green-500 animate-ping-large"></div></div>
-            <div className="text-sm font-medium">Open to new opportunities</div>
+            <div className="bg-green-500 rounded-full size-2.5 relative"><div className="absolute inset-0 rounded-full bg-green-500 animate-ping-large"></div>
+            </div>
+            <div className="text-sm font-medium">{t.availability}</div>
           </div>
         </div>
         <div className="max-w-lg mx-auto">
-          <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-            Building Exceptional User Experiences
+          <h1 className="font-serif text-3xl md:text-5xl text-center mt-6 tracking-wide">
+            {t.heroTitle}
           </h1>
           <p className="mt-4 text-center text-white/70 md:text-lg">
-            I spacialize in transforming designs into functional, high
-            performing web applications. Let's discuss your next project!
+            {t.heroDescription}
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
           <button className="inline-flex items-center gap-2 border border-white px-6 h-12 rounded-xl">
-            <span className="font-semibold">Explore My Work</span>
+            <span className="font-semibold">{t.exploreButton}</span>
             <ArrowDown className="size-4" />
           </button>
           <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
             <span>👋🏻</span>
-            <span className="font-semibold">Connect with Me</span>
+            <span className="font-semibold">{t.contactButton}</span>
           </button>
         </div>
       </div>

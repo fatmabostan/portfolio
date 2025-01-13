@@ -9,8 +9,7 @@ export const Header = ({ t }: { t: { [key: string]: string }}) => {
         <a href="#projects" className="nav-item">{t.projects}</a>
         <a href="#contact" className="nav-item bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900">{t.contact}</a>
         <Link href={`/${t.dict}`} className="nav-item">
-        <span className="mr-2">{t.dict.toUpperCase()}</span>
-        <span>{t.flag}</span>
+        {t.dict.toUpperCase()}
         </Link>
       </nav>
     </div>

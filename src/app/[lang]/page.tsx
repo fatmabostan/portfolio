@@ -1,6 +1,6 @@
 import { Header } from "@/sections/Header";
 import { HeroSection } from "@/sections/Hero";
-import { ProjectsSection } from "@/sections/Projects";
+import { ProjectSection } from "@/sections/Project";
 import { TapeSection } from "@/sections/Tape";
 import { ExperienceSection } from "@/sections/Experience";
 import { AboutSection } from "@/sections/About";
@@ -13,12 +13,12 @@ export default async function Home({params}: {params: Promise<{lang: 'en' | 'tr'
   return (
     <div>
       <Header t={dict.header} />
-      <HeroSection />
-      <ProjectsSection />
-      <TapeSection />
-      <ExperienceSection />
-      <AboutSection />
-      <ContactSection />
+      <HeroSection t={dict.hero} />
+      <ProjectSection t={dict.projects} />
+      <AboutSection t={dict.about} />
+      <TapeSection t={dict.tape} />
+      <ExperienceSection t={dict.experiences} />
+      <ContactSection t={dict.contact} />
       <Footer />
     </div>
   );
