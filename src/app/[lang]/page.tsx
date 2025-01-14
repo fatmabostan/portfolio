@@ -7,7 +7,7 @@ import { AboutSection } from "@/sections/About";
 import { ContactSection } from "@/sections/Contact";
 import { Footer } from "@/sections/Footer";
 import { getDictionary } from "./dictionaries";
-export default async function Home({params}: {params: Promise<{lang: 'en' | 'tr'}> }) {
+export default async function Page({params}: {params: Promise<{lang: 'en' | 'tr'}> }) {
   const lang = (await params).lang
   const dict = await getDictionary(lang);
   return (

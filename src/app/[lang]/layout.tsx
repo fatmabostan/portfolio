@@ -11,23 +11,19 @@ export const metadata: Metadata = {
   description: "Created with ❤️ in Ankara",
 };
 
-interface LangParams {
-  dict: string;
-}
-
+type Params = Promise<{lang: "en" | "tr" }>;
 export async function generateStaticParams() {
-  return [{ dict: "en" }, { dict: "tr" }];
+  return [{ lang: 'en' }, { lang: 'tr' }]
 }
-
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: Awaited<LangParams>; // Awaited ile çözüm tipi kullanıldı
+  params: Params
 }>) {
   return (
-    <html lang={params.dict} className="scroll-smooth">
+    <html lang={(await params).lang} className="scroll-smooth">
       <head>
         <link rel="icon" href="/favicon.png" />
       </head>
